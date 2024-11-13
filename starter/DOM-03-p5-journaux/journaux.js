@@ -14,4 +14,4 @@ DOM - PREPA 5 : « Journaux » : construire une liste de journaux
 Il a sans doute été simplifié à outrance dans un souci 
 de rendre la génération la plus simple possible en JS.
 TODO : améliorer le balisage HTML généré !!! */
-
+document.getElementById("contenu").insertAdjacentHTML("afterbegin", "<ul><li><a href='http://lemonde.fr'>Le Monde</a></li><li><a href='http://lefigaro.fr'>Le figaro</a></li><li><a href='http://liberation.fr'>Liberation</a></li></ul>");

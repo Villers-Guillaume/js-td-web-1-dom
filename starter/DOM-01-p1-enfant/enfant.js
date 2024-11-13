@@ -13,7 +13,17 @@ AIDES :
 */
 
 // Insérez votre code ici
-
+function afficherEnfant(noeud, indice) {
+    if (noeud.nodeType === noeud.ELEMENT_NODE) {
+        if (indice < noeud.childNodes.length && indice >= 0) {
+            console.log(noeud.childNodes[indice]);
+        } else {
+            console.log("Indice incorrect");
+        }
+    } else {
+        console.log("Type de noeud incorrect")
+    }
+}
 
 
 
@@ -21,9 +31,7 @@ AIDES :
 // Doit afficher le noeud h1
 afficherEnfant(document.body, 1);
 
-// Doit afficher l'erreur "Indice incorrect"
-// L'indice demandé est négatif
-afficherEnfant(document.body, -1);
+
 
 // Doit afficher l'erreur "Indice incorrect"
 // Le noeud body à moins de 9 noeuds enfants
@@ -32,3 +40,7 @@ afficherEnfant(document.body, 8);
 // Doit afficher l'erreur "Type de noeud incorrect"
 // Le premier noeud enfant de body est textuel et n'a donc pas d'enfants
 afficherEnfant(document.body.childNodes[0], 0);
+
+// Doit afficher l'erreur "Indice incorrect"
+// L'indice demandé est négatif
+afficherEnfant(document.body, -1);

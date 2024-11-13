@@ -14,7 +14,7 @@ EXERCICE 1 : sélectionner le titre "Merveilles du monde antique"
 de notre page web en utilisant la propriété childNodes
 (Aide : il s'agit du deuxième nœud enfant du sixième nœud enfant du nœud body)
 */
-
+console.log(document.getElementById("contenu").childNodes[1]);
 
 
 // 2. Sélection d'éléments selon leur balise
@@ -25,6 +25,7 @@ en utilisant la méthode getElementsByTagName()
 (Aide : il s'agit du premier titre h2 du document)
 - Afficher le nombre de titres h2 dans le document
 */
+
 
 
 

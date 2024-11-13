@@ -9,10 +9,12 @@ SOURCE : https://github.com/oc-courses/javascript-web
 */
 
 // Insérez votre code ici
+function compterElements(element) {
+    console.log(document.querySelectorAll(element).length);
+}
 
 
-
-console.log(compterElements("p")); // Doit afficher 4
-console.log(compterElements(".adjectif")); // Doit afficher 3
-console.log(compterElements("p .adjectif")); // Doit afficher 3
-console.log(compterElements("p > .adjectif")); // Doit afficher 2
+compterElements("p"); // Doit afficher 4
+compterElements(".adjectif"); // Doit afficher 3
+compterElements("p .adjectif"); // Doit afficher 3
+compterElements("p > .adjectif"); // Doit afficher 2

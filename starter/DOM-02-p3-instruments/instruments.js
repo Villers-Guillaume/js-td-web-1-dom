@@ -19,9 +19,19 @@ SOURCE : https://github.com/oc-courses/javascript-web
     - si l'élément d'id "trompette" possède la classe "cuivre" (doit afficher true)
     - si l'élément d'id "contrebasse" possède la classe "cordes" (doit afficher "Aucun élément ne possède l'id contrebasse")
 */
+function getInfosLiens() {
+    const allLinkElements = document.querySelectorAll("a");
+    console.log(`Il y a ${allLinkElements.length} liens`);
+    console.log(allLinkElements[0]);
+    console.log(allLinkElements[allLinkElements.length-1])
+}
+getInfosLiens();
 
+document.querySelector("ul").insertAdjacentHTML("beforeend",'Le <a href="https://fr.wikipedia.org/wiki/Clavecin">clavecin</a>');
 
+getInfosLiens();
 
-
-
+function possede(id, className) {
+    return document.getElementById(id).classList.contains(className);
+}
 

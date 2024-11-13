@@ -6,56 +6,62 @@ http://icant.co.uk/articles/domessentials/
 */
 
 /* 1. Cibler l'élément d'id nav */
-
+console.log(document.getElementById("navigation"));
 
 /* 2. Récupérer tous les li */
-
+console.log(document.querySelectorAll("li"));
 
 /* 3. Cibler le 4e li */
+const liElements = document.querySelectorAll("li");
 
+console.log(liElements[3]);
 
 /* 4. Compter le nombre de li dans la page */
-
+console.log(liElements.length);
 
 /* 5. Cibler le premier li pair */
-
+console.log(document.querySelector('.pair'));
 
 /* 6. Récupérer tous les li de classe impair */
-
+console.log(document.querySelectorAll(".impair"));
 
 /* a) afficher ce qu'on obtient */
 
 
 /* b) afficher le 2e li de classe impair */
+const impairElements = document.querySelectorAll(".impair");
 
+console.log(impairElements[1]);
 
 /* c) afficher chacun des li impair */
-
+for (const impairElement of impairElements) {
+    console.log(impairElement);
+}
 
 
 /* d) compter le nombre de li de classe impair dans la page */
-
+console.log(impairElements.length)
 
 
 /* 7. Cibler le 4e li puis, à partir de là, cibler son frère juste avant lui */
-
+console.log(impairElements[3].previousElementSibling);
 
 
 /* 8. Cibler le 4e li puis, à partir de là, cibler le suivant */
-
+console.log(impairElements[3].nextElementSibling);
 
 
 /* 9. Cibler le parent du 4e li */
-
+console.log(impairElements[3].parentNode);
 
 
 /* 10. Récupérer tous les enfants de l'ul */
-
+const ulElements = document.querySelector("ul").childNodes;
 
 /* a) afficher ce qu'on obtient */
-
+console.log(ulElements)
 /* b) cibler le 1er enfant de l'ul */
-
+console.log(ulElements[1])
 
 /* c) cibler le dernier enfant de l'ul */
 
